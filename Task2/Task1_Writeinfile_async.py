@@ -2,7 +2,7 @@ import aiohttp
 import asyncio
 import time
 
-record=open("Task2_AsyncTime.txt","a")
+record=open("Task2_AsyncTime.txt","w")
 filename = "Task2_Async.txt"     # create a file with a unique name
 f=open(filename,'a')        #APPENDING A SINGLE FILE SINCE I'M NOT SURE IF CREATING 200 FILES WOULD BE A GOOD IDEA
 
