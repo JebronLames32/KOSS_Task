@@ -2,7 +2,7 @@ import time
 
 import requests
 
-record=open("Task2_SyncTime.txt","a")
+record=open("Task2_SyncTime.txt","w")
 
 filename = "Task2_sync.txt"     # create a file with a unique name
 f=open(filename,'a')        #APPENDING A SINGLE FILE SINCE I'M NOT SURE IF CREATING 200 FILES WOULD BE A GOOD IDEA
