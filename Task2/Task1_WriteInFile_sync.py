@@ -9,7 +9,7 @@ f=open(filename,'a')        #APPENDING A SINGLE FILE SINCE I'M NOT SURE IF CREAT
 
 def download(comic_id: int):
 
-    url = f"https://xkcd.com/{comic_id}/info.0.json/"
+    url = f"https://xkcd.com/{comic_id}/info.0.json"
     print("In",url)
     response = requests.get(url)
     
