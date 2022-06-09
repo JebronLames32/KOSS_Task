@@ -7,12 +7,12 @@ filename = "Task2_Async.txt"     # create a file with a unique name
 f=open(filename,'a')        #APPENDING A SINGLE FILE SINCE I'M NOT SURE IF CREATING 200 FILES WOULD BE A GOOD IDEA
 
 async def getOnePage(session,comic_id: int):
-    url = f"https://xkcd.com/{comic_id}/info.0.json/"
+    url = f"https://xkcd.com/{comic_id}/info.0.json"
     async with session.get(url) as sesh:
         content=await sesh.read()
         print(content,file=f)               #writing contents into the file one by one here
         print(f"Begin downloading {url}")
-        result=await sesh.text()
+        result=await sesh.json()
         print(f"Finished downloading {url}")
         return result
 
